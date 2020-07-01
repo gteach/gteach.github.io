@@ -1,1 +1,8 @@
 @import "";
+
+body {
+     font-family: 'Raleway', sans-serif;
+     text-align: center;
+     color: black;
+     background-color: whitesmoke;
+}

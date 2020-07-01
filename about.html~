@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS101 Bootcamp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>CS101 Bootcamp</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#section3">Contact</a></li>
+        <li class="active"><a href="#section3">About</a></li>
+      </ul><br>
+      <!--
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+      -->
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Lesson 1</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Graham, Jun 30, 2020.</h5>
+      <h5><span class="label label-danger">Jupyter</span> <span class="label label-primary">Python</span></h5><br>
+      <p>
+	Welcome to the first lesson of CS101! These posts will serve as short summaries of Zoom lectures for those that were unable to attend, or for those who would like an abbreviated version of the material covered. We'll start by setting up our environment, and end with a few simple problems to familiarize ourselves with editing and running a file. The editor we will use for writing our code is <a href="https://jupyter.org/">Jupyter Notebook</a>.
+      </p>
+      <br><br>
+      
+      <h4><small>OLDER</small></h4>
+      <hr>
+      <h2>Welcome!</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Graham, Jun 30, 2020.</h5>
+      <h5><span class="label label-success">Admin</span></h5><br>
+      <p>
+	Welcome to CS101's Summer Bootcamp for 2020! This class is meant to provide you with an introduction to basic programming. Students will become familiar with the necessary skills to create programs and projects by themselves. We'll use Python for this class, arguably the most popular programming language in the world right now, for its easy learning curve and powerfu capabilities in various computing fields. Some of the things you will learn in this class include fundamentals such as:
+<ul>
+  <li>Creating scripts with Python</li>
+  <li>Running, saving, and deploying your work using Jupyter Notebook</li>
+  <li>Solving problems found on real coding interviews</li>
+  <li>Basic number theory and math concepts to strengthen your coding ability</li>
+</ul>
+My goal is to provide beginners with all of the tools necessary to begin exploring programming on their own. Through simple exercises and problem-solving acitivities, students will develop skills on their own; my role is to help demystify coding so that anyone can get the hang of writing their own programs. 
+      </p>
+      <hr>
+<!--
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <p>Me too! WOW!</p>
+              <br>
+            </div>
+          </div>
+	  -->
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>By Graham Burleigh, 2020</p>
+</footer>
+
+</body>
+</html>
