@@ -33,7 +33,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #hidden-content {
        position: absolute;
-       margin-top: -5%;
+       margin-top: 0%;
        opacity: 10%;
        z-index: -1;
 }
@@ -140,7 +140,7 @@ div.vertical {
 <body>
 <div class="stack">
 <div id="login-content">
-        <h1> Summer 2020 Python Bootcamp </h1>
+        <h1> Summer 2020 Python Bootcamp (testing)</h1>
 	<div id="logo">
       <img src="logo_transparent.png">
       
