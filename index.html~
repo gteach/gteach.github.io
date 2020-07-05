@@ -7,8 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->
 </head>
 
 <style>
@@ -56,7 +59,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     margin-left: 31%;
     margin-top: -4%;
     text-align: center;
-    width: 38%;
+    width: 39%;
     height: 69%;
     position: fixed;
 }
@@ -253,12 +256,15 @@ My goal is to provide beginners with all of the tools necessary to begin explori
 
 
 	function loadPage(pwd) {
-
+	        console.log(pwd);
 		var hash= pwd;
 		hash= Sha1.hash(pwd);
 		var url= hash + "/index.html";
-
-		$.ajax({
+                console.log("Expected hash:");
+	        console.log("911b1ee02ead2b6f681d6997c6f54f58b6f5069c");
+		console.log("Got hash:");
+	        console.log(hash);
+	        $.ajax({
 			url : url,
 			dataType : "html",
 			success : function(data) {
@@ -268,7 +274,8 @@ My goal is to provide beginners with all of the tools necessary to begin explori
 			},
 			error : function(xhr, ajaxOptions, thrownError) {
 
-
+	                console.log("Exited with error...");
+	                console.log(thrownError);
 				parent.location.hash= hash;
 
 				//$("#wrongPassword").show();
