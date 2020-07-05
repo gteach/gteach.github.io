@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title></title>
+<title>CS101 Summer Bootcamp</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
@@ -23,8 +23,16 @@ html, body {margin: 0; height: 100%; overflow: hidden}
        
 }
 
+.stack {
+    display: grid;
+}
+.stack > * {
+    grid-row: 1;
+    grid-column: 1;
+}
+
 #hidden-content {
-       position: relative;
+       position: absolute;
        margin-top: -5%;
        opacity: 10%;
        z-index: -1;
@@ -56,12 +64,12 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     }
 
 #logo > img {
-    margin-left: 31%;
-    margin-top: -4%;
+    margin-left: 0%;
+    margin-top: -23%;
     text-align: center;
-    width: 39%;
-    height: 69%;
-    position: fixed;
+    width: 515px;
+    height: 500px;
+    position: relative;
 }
 
 #logo > h1 {
@@ -71,7 +79,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 .box {
         position: relative;
-        margin-top:;
+        text-align: center;
 	border-radius: 5px;
 	background: rgba(101, 101, 101, 0); margin: auto; padding: 12px;
 }
@@ -130,11 +138,12 @@ div.vertical {
 </style>
 
 <body>
-
+<div class="stack">
 <div id="login-content">
+        <h1> Summer 2020 Python Bootcamp </h1>
 	<div id="logo">
       <img src="logo_transparent.png">
-      <h1> Summer 2020 Python Bootcamp </h1>
+      
     </div>
   <div id="loginbox" class="lightbox" >
 		<div class="horizontal">
@@ -245,6 +254,7 @@ My goal is to provide beginners with all of the tools necessary to begin explori
   </div>
 </div>
 
+</div>
 </div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
