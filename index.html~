@@ -33,7 +33,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #hidden-content {
        position: absolute;
-       margin-top: 0%;
+       margin-top: 5%;
        opacity: 10%;
        z-index: -1;
 }
