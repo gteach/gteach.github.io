@@ -139,7 +139,7 @@ My goal is to provide beginners with all of the tools necessary to begin explori
   var oldUrl = document.referrer;
   console.log("Attempted to access from URL:");
   console.log(oldUrl);
-  if (oldUrl == "gteach.github.io") {
+  if (oldUrl == "https://gteach.github.io/") {
   console.log("Logged in successfully");
 }
   else {
