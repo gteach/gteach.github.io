@@ -135,17 +135,6 @@ My goal is to provide beginners with all of the tools necessary to begin explori
 <footer class="container-fluid">
   <p>By Graham Burleigh, 2020</p>
 </footer>
-<script type="text/javascript">
-  var oldUrl = document.referrer;
-  console.log("Attempted to access from URL:");
-  console.log(oldUrl);
-  if (oldUrl == "gteach.github.io") {
-  console.log("Logged in successfully");
-}
-  else {
-  console.log("Login from external user, redirecting");
-  window.location.replace("gteach.github.io");
-}
-</script>
+
 </body>
 </html>
