@@ -137,15 +137,20 @@ My goal is to provide beginners with all of the tools necessary to begin explori
 </footer>
 <script type="text/javascript">
   var oldUrl = document.referrer;
+  var urls = ["https://gteach.github.io/", "https://gteach.github.io/911b1ee02ead2b6f681\
+d6997c6f54f58b6f5069c/index.html", "https://gteach.github.io/911b1ee02ead2b6f681d6997c6f\
+54f58b6f5069c/resources", "https://gteach.github.io/911b1ee02ead2b6f681d6997c6f54f58b6f5\
+069c/contact", "https://gteach.github.io/911b1ee02ead2b6f681d6997c6f54f58b6f5069c/about"\
+];
   console.log("Attempted to access from URL:");
   console.log(oldUrl);
-  if (oldUrl == "https://gteach.github.io/") {
+  if (urls.includes(oldUrl)) {
   console.log("Logged in successfully");
 }
   else {
   console.log("Login from external user, redirecting");
-  
-  setTimeout(() => {window.location.href = "https://gteach.github.io/";}, 15000);
+
+  setTimeout(() => {window.location.href = "https://gteach.github.io/";}, 3000);
 }
 </script>
 </body>
