@@ -144,7 +144,7 @@ My goal is to provide beginners with all of the tools necessary to begin explori
 }
   else {
   console.log("Login from external user, redirecting");
-  window.location.replace("gteach.github.io");
+  window.location.replace("https://gteach.github.io/");
 }
 </script>
 </body>
